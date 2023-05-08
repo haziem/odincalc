@@ -1,13 +1,12 @@
 'use strict'
 
-let user = {
-	// an object
-	name: 'John', // by key "name" store value "John"
-	age: 30, // by key "age" store value 30
+const keyPressed = document.querySelectorAll('button')
+const info = document.querySelector('.info')
+const mainContainer = document.querySelector('.main-container')
+
+function rotateY() {
+	mainContainer.classList.toggle('rotation')
+
 }
 
-console.log(user)
-
-function test() {
-	console.log(user);
-}
+info.addEventListener('click', rotateY)
