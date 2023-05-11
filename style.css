@@ -110,40 +110,39 @@ button:hover {
 sup {
 	font-size: 50%;
 }
-
 .main-container {
-	position: relative;
+	box-shadow: 0 0 10px rgb(181, 181, 181);
+	caret-color: transparent;
 	display: grid;
 	grid-template-rows: repeat(7, 4fr);
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: calc(2vh);
+	position: relative;
+	overflow: hidden;
 	width: 50%;
 	max-width: 400px;
 	height: 75vh;
 	max-height: 700px;
-	margin-right: auto;
-	margin-left: auto;
 	margin-top: 2vh;
+	margin-right: auto;
 	margin-bottom: 2vh;
-	background-color: #efefef;
+	margin-left: auto;
 	padding: 1rem;
-	box-shadow: 0 0 10px rgb(181, 181, 181);
-	font-size: calc(4vh);
-	overflow: hidden;
 	transition: transform 0.5s;
-	caret-color: transparent;
+	background-color: #efefef;
+	font-size: calc(4vh);
 }
 .info {
-	position: absolute;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	width: 4vh;
-	height: 4vh;
+	align-items: center;
+	position: absolute;
 	top: 1rem;
 	right: 3rem;
-	padding: 0;
+	width: 4vh;
+	height: 4vh;
 	margin: 0;
+	padding: 0;
 	border: 2px solid lightgrey;
 	border-radius: 50%;
 }
@@ -156,29 +155,27 @@ sup {
 	opacity: 0.7;
 	cursor: pointer;
 }
-
 .display {
-	position: relative;
 	grid-column: 1/5;
+	position: relative;
 	overflow: hidden;
-	padding: calc(1vh);
 	height: 19vh;
-
+	padding: calc(1vh);
 	background-image: linear-gradient(#c4e1fb, #ebebfc);
+	border-bottom: solid 3px #dedede;
 	font-size: calc(8vh);
 	font-family: 'Staatliches', Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: 400;
 	text-align: right;
 	letter-spacing: 2px;
-	border-bottom: solid 3px #dedede;
 }
 
 .display-memory {
 	position: absolute;
-	font-size: 2vh;
-	text-align: left;
 	top: 0;
 	left: 0;
+	font-size: 2vh;
+	text-align: left;
 }
 .display-operation {
 	font-size: 2vh;
